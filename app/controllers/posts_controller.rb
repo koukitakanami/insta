@@ -19,6 +19,7 @@ class PostsController < ApplicationController
     #Post.create(posts_params)
     if @post.save
       redirect_to posts_path, notice: "投稿しました！"
+      #NoticeMailer.sendmail_blog(@post).deliver
     else
       # 入力フォームを再描画します。
       render 'new'
@@ -43,7 +44,7 @@ class PostsController < ApplicationController
   
   private
   def posts_params
-    params.require(:post).permit(:content)
+     params.require(:post).permit(:title, :content, :image, :image_cache)
   end
   
 end
