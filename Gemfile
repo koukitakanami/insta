@@ -56,7 +56,8 @@ gem 'omniauth'
 
 gem 'omniauth-twitter'
 
-gem 'omniauth-facebook'
+#gem 'omniauth-facebook'
+gem 'omniauth-facebook', '~> 3.0.0'
 
 gem 'dotenv-rails'
 
