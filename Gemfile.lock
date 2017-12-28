@@ -134,7 +134,7 @@ GEM
     omniauth (1.1.4)
       hashie (>= 1.2, < 3)
       rack
-    omniauth-facebook (1.3.0)
+    omniauth-facebook (1.4.0)
       omniauth-oauth2 (~> 1.0.2)
     omniauth-oauth (1.1.0)
       oauth
@@ -252,7 +252,7 @@ DEPENDENCIES
   letter_opener_web
   mini_magick
   omniauth (= 1.1.4)
-  omniauth-facebook (= 1.3)
+  omniauth-facebook (= 1.4.0)
   omniauth-twitter
   pg (= 0.20.0)
   rails (= 4.2.7.1)
