@@ -52,12 +52,12 @@ gem 'devise'
 
 gem 'rails_12factor', group: :production
 
-gem 'omniauth'
+gem 'omniauth',"1.1.4"
 
 gem 'omniauth-twitter'
 
 #gem 'omniauth-facebook'
-gem 'omniauth-facebook', '~> 3.0.0'
+gem 'omniauth-facebook', '1.4.1'
 
 gem 'dotenv-rails'
 
