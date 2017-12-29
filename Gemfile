@@ -52,11 +52,12 @@ gem 'devise'
 
 gem 'rails_12factor', group: :production
 
-gem 'omniauth'
+gem 'omniauth',"1.1.4"
 
 gem 'omniauth-twitter'
 
-gem 'omniauth-facebook'
+#gem 'omniauth-facebook'
+gem 'omniauth-facebook', '1.4.0'
 
 gem 'dotenv-rails'
 
@@ -64,6 +65,6 @@ gem 'dotenv-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 
-group :development do
+group :production do
   gem 'letter_opener_web'
 end
