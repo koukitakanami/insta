@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
+  get 'top/index'
+
   #devise_for :users
   resources :posts, only: [:index,:new,:create,:edit,:update,:destroy] 
   root 'posts#index'
   
   devise_for :users, controllers: {
     registrations: "users/registrations",
-    omniauth_callbacks: "users/omniauth_callbacks"
+    omniauth_callbacks: "users/omniauth_callbacks",
+    :sessions => 'users/sessions'
   }
 
   # if Rails.env.development?
